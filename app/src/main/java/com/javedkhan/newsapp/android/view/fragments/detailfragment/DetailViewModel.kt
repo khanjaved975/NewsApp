@@ -24,9 +24,9 @@ class DetailFragmentViewModel @Inject constructor (dataRequest: ApiService) : Ba
 
     fun getCurrencyHistoryRates(apiKey: String,starDate:String, endDate:String): MutableLiveData<CurrencyHistoryResponse?> {
         return try {
-            viewModelScope.launch(Dispatchers.IO) {
+           /* viewModelScope.launch(Dispatchers.IO) {
                 currencyHistory=defaultRepository.CurrencyHistoryData(apiKey,starDate,endDate)
-            }
+            }*/
             currencyHistory
         }catch (e:Exception){
             e.localizedMessage

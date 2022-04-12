@@ -1,6 +1,7 @@
 package com.javedkhan.newsapp.android.utils
 
 object Constant {
+
     /* ---- Font Related Constants -- */
     var U_BOLD = "OpenSans-Bold.ttf"
     var U_Medium = "OpenSans-Regular.ttf"
@@ -14,6 +15,7 @@ object Constant {
     // Retrofit file cache name
     var retrofitCacheFile = "investerServiceCacheFile"
 
+    const val OK = "OK"
     const val KEY_API_SUCESS_CODE = "200"
     const val KEY_API_ERROR_401 = "401"
     const val KEY_API_ERROR_422 = "422"

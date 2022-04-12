@@ -11,31 +11,42 @@ import kotlinx.android.synthetic.main.item_layout.view.*
 
 class AdapterList(
     val context: Context,
-    val items: List<String>,
+    private val items: List<String>,
     val onClickItem: (Int) -> Unit
-) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-    class MyViewHolder(view: View) : RecyclerView.ViewHolder(view)
+) : RecyclerView.Adapter<AdapterList.DataViewHolder>() {
+   // class MyViewHolder(view: View) : RecyclerView.ViewHolder(view)
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): MyViewHolder {
+    ): DataViewHolder {
         val itemView: View = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_layout, parent, false)
-        return MyViewHolder(itemView)
+        return DataViewHolder(itemView)
     }
 
     override fun getItemCount(): Int {
         return items.size
     }
 
-    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val items = items[position]
+    override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
 
-        holder.itemView.name.text = items
+        holder.bind(items[position])
 
         holder.itemView.setOnClickListener {
             onClickItem(position)
+        }
+    }
+
+    class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
+        fun bind(item: String) {
+            itemView.apply {
+                itemView.name.text = item
+                /*Glide.with(imageViewAvatar.context)
+                    .load(user.avatar)
+                    .into(imageViewAvatar)*/
+            }
         }
     }
 }

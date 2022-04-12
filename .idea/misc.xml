@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/drawable-v24/ic_back_arrow.xml" value="0.142" />
+        <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.142" />
+        <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/drawable/close.xml" value="0.142" />
+        <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.142" />
+        <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/drawable/shape_circle.xml" value="0.142" />
         <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/layout/activity_splash.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/layout/alertdialogroundedlayout.xml" value="0.1" />
         <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/layout/custom_marker_view.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/layout/fragment_detail.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/layout/fragment_home.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/layout/item_layout.xml" value="0.2033514492753623" />
+        <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/layout/item_layout.xml" value="0.165" />
         <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/layout/progress_dialog.xml" value="0.2033514492753623" />
         <entry key="..\:/Users/Anees Khan/Desktop/AndroidProject/Assingments/NewsApp/app/src/main/res/layout/spinner_popup.xml" value="0.2033514492753623" />
       </map>
