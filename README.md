@@ -1,1 +1,1 @@
-#Currency app
+# NEWS APP
