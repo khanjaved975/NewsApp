@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Currency App</string>
+    <string name="app_name">NEWS App</string>
     <string name="welcome">Welcome!</string>
 
     <string name="no_internet_title">Internet Connection</string>
