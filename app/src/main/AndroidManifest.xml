@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.javedkhan.currencyapp.android">
+    package="com.javedkhan.newsapp.android">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,7 +15,7 @@
     <uses-feature android:name="android.hardware.camera" />
 
     <permission
-        android:name="com.javedkhan.currencyapp.android.permission.C2D_MESSAGE"
+        android:name="com.javedkhan.newsapp.android.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
     <uses-permission android:name="com.javedkhan.currencyapp.android.permission.C2D_MESSAGE" />
@@ -29,7 +29,7 @@
         android:theme="@style/AppTheme"-->
 
     <application
-        android:name="com.javedkhan.currencyapp.android.MyApplication"
+        android:name="com.javedkhan.newsapp.android.MyApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:largeHeap="true"
@@ -42,7 +42,7 @@
 
 
         <activity
-            android:name="com.javedkhan.currencyapp.android.ui.activities.main.MainActivity"
+            android:name="com.javedkhan.newsapp.android.view.activities.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

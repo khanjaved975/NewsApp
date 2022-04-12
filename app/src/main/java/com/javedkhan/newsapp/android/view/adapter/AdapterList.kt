@@ -1,0 +1,41 @@
+package com.javedkhan.newsapp.android.view.adapter
+
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.javedkhan.newsapp.android.R
+import kotlinx.android.synthetic.main.item_layout.view.*
+
+
+class AdapterList(
+    val context: Context,
+    val items: List<String>,
+    val onClickItem: (Int) -> Unit
+) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    class MyViewHolder(view: View) : RecyclerView.ViewHolder(view)
+
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): MyViewHolder {
+        val itemView: View = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_layout, parent, false)
+        return MyViewHolder(itemView)
+    }
+
+    override fun getItemCount(): Int {
+        return items.size
+    }
+
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        val items = items[position]
+
+        holder.itemView.name.text = items
+
+        holder.itemView.setOnClickListener {
+            onClickItem(position)
+        }
+    }
+}

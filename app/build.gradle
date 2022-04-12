@@ -10,7 +10,7 @@ android {
     compileSdkVersion 32
 
     defaultConfig {
-        applicationId "com.javedkhan.currencyapp.android"
+        applicationId "com.javedkhan.newsapp.android"
         minSdkVersion 21
         targetSdkVersion 32
         versionCode 1

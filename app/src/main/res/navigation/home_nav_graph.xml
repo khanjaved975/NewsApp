@@ -18,7 +18,7 @@
 
     <fragment
         android:id="@+id/homefragment"
-        android:name="com.javedkhan.currencyapp.android.ui.fragments.homefragment.HomeFragment"
+        android:name="com.javedkhan.newsapp.android.view.fragments.homefragment.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home">
 
@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/detailfragment"
-        android:name="com.javedkhan.currencyapp.android.ui.fragments.detailfragment.DetailFragment"
+        android:name="com.javedkhan.newsapp.android.view.fragments.detailfragment.DetailFragment"
         android:label="DetailFragment"
         tools:layout="@layout/fragment_detail"/>
 

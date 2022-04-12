@@ -2,13 +2,13 @@
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.javedkhan.currencyapp.android.ui.activities.main.SplashActivity">
+    tools:context="com.javedkhan.newsapp.android.view.activities.main.SplashActivity">
 
     <data>
 
         <variable
             name="viewModel"
-            type="com.javedkhan.currencyapp.android.ui.activities.main.SplashViewModel" />
+            type="com.javedkhan.newsapp.android.view.activities.main.SplashViewModel" />
     </data>
 
 
@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <fragment
+        <androidx.fragment.app.FragmentContainerView
             android:id="@+id/nav_host_fragment"
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"

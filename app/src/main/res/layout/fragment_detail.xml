@@ -3,13 +3,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.javedkhan.currencyapp.android.ui.fragments.detailfragment.DetailFragment">
+    tools:context="com.javedkhan.newsapp.android.view.fragments.detailfragment.DetailFragment">
 
     <data>
 
         <variable
             name="viewModel"
-            type="com.javedkhan.currencyapp.android.ui.fragments.detailfragment.DetailFragmentViewModel" />
+            type="com.javedkhan.newsapp.android.view.fragments.detailfragment.DetailFragmentViewModel" />
     </data>
 
     <LinearLayout
