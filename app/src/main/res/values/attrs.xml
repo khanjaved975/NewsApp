@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="font_name">
+            <enum name="OpenSans-Bold" value="1" />
+            <enum name="OpenSans-Regular" value="2" />
+            <enum name="OpenSans-Light" value="3" />
+            <enum name="OpenSans-Italic" value="4" />
+        </attr>
+        <attr name="localizationKeyText" format="string" />
+    </declare-styleable>
+
+    <attr name="customTextViewStyle" format="reference" />
+
+</resources>
+
+

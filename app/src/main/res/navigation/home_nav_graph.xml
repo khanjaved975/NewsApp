@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homefragment">
+
+
+<!--
+    app:startDestination="@id/homeFragment"
+-->
+   <!-- <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.spmgbihar.android.ui.fragment.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+    </fragment>-->
+
+    <fragment
+        android:id="@+id/homefragment"
+        android:name="com.javedkhan.currencyapp.android.ui.fragments.homefragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homefragment_to_detailfragment"
+            app:destination="@id/detailfragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailfragment"
+        android:name="com.javedkhan.currencyapp.android.ui.fragments.detailfragment.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail"/>
+
+
+</navigation>

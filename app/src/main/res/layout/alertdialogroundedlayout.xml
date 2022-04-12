@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.javedkhan.currencyapp.android.widgets.CustomEditText
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="title"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_below="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp">
+
+            <com.javedkhan.currencyapp.android.widgets.CustomTextView
+                android:id="@+id/txt_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title"
+                android:layout_marginTop="16dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/close"
+            app:tint="@color/colorAccent" />
+
+
+        <Button
+            android:id="@+id/txt_positive"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/scroll"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:text="Ok"
+            android:textColor="@color/colorAccent2" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
