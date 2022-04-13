@@ -30,7 +30,7 @@ class HomeFragmentViewModel @Inject constructor(apiService: ApiService) : BaseVi
     }*/
 
     fun getPopularNews(apiKey: String): MutableLiveData<MostPopularViewResponse?> {
-        viewModelScope.launch(Dispatchers.IO) {
+        viewModelScope.launch(Dispatchers.Main) {
             currencyResponse=dataRepository.getPopularNews(apiKey)
         }
         return currencyResponse

@@ -74,7 +74,7 @@
         <item name="android:textColor">@color/overlay_light_40</item>
         <item name="android:textColorHint">@color/overlay_light_40</item>
         <item name="colorControlHighlight">@color/colorPrimary</item>
-        <item name="colorAccent">@color/colorAccent2</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="boxStrokeColor">@color/colorPrimary</item>
         <item name="boxBackgroundMode">outline</item>
     </style>

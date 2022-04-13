@@ -6,13 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.javedkhan.newsapp.android.R
+import com.javedkhan.newsapp.android.models.Result
 import kotlinx.android.synthetic.main.item_layout.view.*
 
 
 class AdapterList(
     val context: Context,
-    private val items: List<String>,
-    val onClickItem: (Int) -> Unit
+    private val items: List<Result>,
+    val onClickItem: (Result) -> Unit
 ) : RecyclerView.Adapter<AdapterList.DataViewHolder>() {
    // class MyViewHolder(view: View) : RecyclerView.ViewHolder(view)
 
@@ -34,15 +35,18 @@ class AdapterList(
         holder.bind(items[position])
 
         holder.itemView.setOnClickListener {
-            onClickItem(position)
+            onClickItem(items[position])
         }
     }
 
     class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun bind(item: String) {
+        fun bind(item: Result) {
             itemView.apply {
-                itemView.name.text = item
+                itemView.txt_title.text = item.title
+                itemView.txt_description.text = item.adxKeywords
+                itemView.txt_date.text = item.publishedDate
+                itemView.txt_author.text = item.byline
                 /*Glide.with(imageViewAvatar.context)
                     .load(user.avatar)
                     .into(imageViewAvatar)*/

@@ -1,26 +1,18 @@
 package com.javedkhan.newsapp.android.view.fragments.homefragment
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.View
-import android.widget.AdapterView
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
-import com.androidnetworking.utils.Utils
-import com.google.gson.Gson
 import com.javedkhan.newsapp.android.BuildConfig
 import com.javedkhan.newsapp.android.MyApplication
 import com.javedkhan.newsapp.android.R
 import com.javedkhan.newsapp.android.databinding.FragmentHomeBinding
+import com.javedkhan.newsapp.android.models.Result
 import com.javedkhan.newsapp.android.utils.Constant
 import com.javedkhan.newsapp.android.view.base.BaseFragment
-import com.javedkhan.newsapp.android.utils.Constant.CurrencyStringData
-import com.plcoding.currencyconverter.data.models.CurrencyResponse
-import com.plcoding.currencyconverter.data.models.Rates
+import com.javedkhan.newsapp.android.view.adapter.AdapterList
 import dagger.hilt.android.AndroidEntryPoint
 import java.lang.Exception
-import kotlin.math.round
 
 @AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>(), HomeNavigator {
@@ -42,52 +34,42 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>(),
 
     override fun onStart() {
         super.onStart()
-        setUI()
-    }
-
-    override fun onResume() {
-        super.onResume()
+        getPopularArticle()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         homeFragmentBinding = this.viewDataBinding!!
-        homeFragmentBinding.toolbarTitle.text = "Currency App"
-    }
-
-    fun setUI() {
-        try {
-            homeFragmentBinding.spFromCurrency.setSelection(2)
-            homeFragmentBinding.spToCurrency.setSelection(3)
-            homeFragmentBinding.btnDetail.setOnClickListener {
-                DetailButtonClick()
-            }
-
-            homeFragmentBinding.btnSwap.setOnClickListener {
-                SwapButtonClick()
-            }
-        } catch (e: Exception) {
-            e.localizedMessage
+        homeFragmentBinding.toolbarTitle.text = resources.getString(R.string.nytimes)
+        homeFragmentBinding.btnRefresh.setOnClickListener {
+            getPopularArticle()
         }
-
     }
 
-    fun getPopularArtical() {
+    override fun onResume() {
+        super.onResume()
+        getPopularArticle()
+    }
+
+    private fun getPopularArticle() {
         try {
             if (MyApplication.hasNetwork()) {
-                showProgressLoading("")
-                viewModel.getPopularNews(BuildConfig.API_KEY).observe(viewLifecycleOwner, Observer {
+                viewModel.getPopularNews(BuildConfig.API_KEY).observe(viewLifecycleOwner) {
                     if (it != null) {
-                        hideProgressDialog()
                         if (it.status == Constant.OK) {
-                            activity?.let { it1 -> showAlert("Success !", it.copyright, it1) }
+                            setNewsList(it.results)
                         } else {
-                             activity?.let { it1 -> showAlert("Failed !", "Something went wrong", it1) }
+                            activity?.let { it1 ->
+                                showAlert(
+                                    "Failed !",
+                                    "Something went wrong",
+                                    it1
+                                )
+                            }
                         }
                     }
-                })
+                }
             } else {
-                hideProgressDialog()
                 showAlert(
                     resources.getString(R.string.no_internet_title),
                     resources.getString(R.string.no_internet_msg),
@@ -95,41 +77,37 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>(),
                 )
             }
         } catch (e: Exception) {
-            e.localizedMessage
+            showAlert(
+                resources.getString(R.string.error),
+                e.localizedMessage,
+                requireActivity()
+            )
         }
     }
 
-    override fun DetailButtonClick() {
-        getPopularArtical()
-
-        //navController.navigate(R.id.action_homefragment_to_detailfragment)
-    }
-
-    override fun SwapButtonClick() {
-        try {
-            val toPosition = homeFragmentBinding.spToCurrency.selectedItemPosition
-            val fromPosition = homeFragmentBinding.spFromCurrency.selectedItemPosition
-            homeFragmentBinding.spFromCurrency.setSelection(toPosition)
-            homeFragmentBinding.spToCurrency.setSelection(fromPosition)
-            if (!homeFragmentBinding.etFrom.text.isNullOrEmpty()) {
-                var currentAmt = homeFragmentBinding.etFrom.text.toString().toFloat()
-                //apiCall(currentAmt)
-                homeFragmentBinding.etFrom.setText(currentAmt.toString())
+    private fun setNewsList(results: List<Result>) {
+        val adapter =
+            context?.let { it1 ->
+                AdapterList(
+                    it1,
+                    results,
+                    ::onClickItem
+                )
             }
-        } catch (e: Exception) {
-            e.localizedMessage
-        }
+        homeFragmentBinding.rvArtical.adapter = adapter
+    }
 
+    private fun onClickItem(result: Result) {
+       // Toast.makeText(context, result.title, Toast.LENGTH_SHORT).show()
+        ArticleDetailPageNavigation(result.title,result.url)
+    }
+
+    override fun ArticleDetailPageNavigation(title: String,url:String) {
+        val bundle = Bundle()
+        bundle.putString("title", title)
+        bundle.putString("url", url)
+        navController.navigate(R.id.action_homefragment_to_detailfragment,bundle)
     }
 
 
-
-    override fun onDetach() {
-        super.onDetach()
-    }
-
-
-    override fun onDestroy() {
-        super.onDestroy()
-    }
 }

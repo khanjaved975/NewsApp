@@ -31,6 +31,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="2dp"
+
                 android:layout_marginRight="10dp"
                 android:background="@drawable/ic_back_arrow"
                 android:backgroundTint="@color/white" />
@@ -39,103 +40,18 @@
                 android:id="@+id/toolbarTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                tools:text="Currency Details" />
+                tools:text=" Details" />
         </LinearLayout>
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_margin="8dp"
-            android:layout_weight="3.8">
-
-            <com.github.mikephil.charting.charts.BarChart
-                android:id="@+id/barChart"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="6">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="2">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:gravity="center"
-                        android:text="Historical List(Last 3 Days)"
-                        android:textAllCaps="true"
-                        android:textColor="@color/black"
-                        android:textSize="17dp"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/rvHistorical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                        tools:listitem="@layout/item_layout">
-
-                    </androidx.recyclerview.widget.RecyclerView>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="10dp"
-                        android:gravity="center"
-                        android:text="Other Currencies"
-                        android:textAllCaps="true"
-                        android:textColor="@color/black"
-                        android:textSize="17dp"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/rvOtherCurrency"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                        tools:listitem="@layout/item_layout">
-
-                    </androidx.recyclerview.widget.RecyclerView>
-
-                </LinearLayout>
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
 
 
     </LinearLayout>
