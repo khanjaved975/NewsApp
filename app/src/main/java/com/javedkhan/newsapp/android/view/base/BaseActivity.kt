@@ -21,7 +21,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.javedkhan.newsapp.android.R
-import com.javedkhan.newsapp.android.utils.AppUtils
+import com.javedkhan.newsapp.android.utils.Constant
 
 abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppCompatActivity(), BaseFragment.Callback {
     /**
@@ -147,7 +147,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
             progressDialog.setCancelable(false);
             progressDialog.show();
         }*/
-        progressDialog = AppUtils.ShowLoader(this@BaseActivity)
+        progressDialog = Constant.ShowLoader(this@BaseActivity)
 
     }
 

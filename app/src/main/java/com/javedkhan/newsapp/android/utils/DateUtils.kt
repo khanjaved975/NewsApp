@@ -1,5 +1,6 @@
 package com.javedkhan.newsapp.android.utils
 
+import android.annotation.SuppressLint
 import android.provider.Settings
 import java.text.DateFormat
 import java.text.ParseException
@@ -65,6 +66,7 @@ object DateUtils {
         return dates
     }
 
+    @SuppressLint("SimpleDateFormat")
     fun changeDateFormate(sDate: String?): String {
         val inputFormat: DateFormat = SimpleDateFormat("dd-MM-yyyy")
         val outputFormat: DateFormat = SimpleDateFormat("yyyy-MM-dd")

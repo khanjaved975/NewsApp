@@ -4,37 +4,50 @@ import androidx.lifecycle.MutableLiveData
 import com.google.gson.Gson
 import com.javedkhan.newsapp.android.BuildConfig
 import com.javedkhan.newsapp.android.apiclient.ApiService
+import com.javedkhan.newsapp.android.base.BaseUTTest
+import com.javedkhan.newsapp.android.models.MostPopularViewResponse
+import com.javedkhan.newsapp.android.repository.DefaultRepository
 import com.javedkhan.newsapp.android.utils.Constant
-import com.plcoding.currencyconverter.data.models.CurrencyResponse
-import junit.framework.Assert.assertEquals
-import kotlinx.coroutines.ExperimentalCoroutinesApi
+import dagger.hilt.android.testing.HiltAndroidRule
+import io.mockk.MockKAnnotations
+import kotlinx.coroutines.runBlocking
+import org.junit.Assert
 import org.junit.Before
+import org.junit.Rule
 import org.junit.Test
+import org.junit.runner.RunWith
+import org.junit.runners.JUnit4
 import org.mockito.Mock
-import org.mockito.Mockito
-import org.mockito.MockitoAnnotations.initMocks
 
-class HomeFragmentViewModelTest {
+
+@RunWith(JUnit4::class)
+class HomeFragmentViewModelTest : BaseUTTest() {
+    @get:Rule
+    var hiltRule = HiltAndroidRule(this)
+
     @Mock
     lateinit var dataRequest: ApiService
     lateinit var homeFragmentViewModel: HomeFragmentViewModel
-    private val mutatableCurrencyResponse = MutableLiveData<CurrencyResponse>()
+    lateinit var  dataRepository: DefaultRepository
+
+    private var mutatableResponse = MutableLiveData<MostPopularViewResponse?>()
 
     @Before
-    fun setUp() {
-        initMocks(this)
-        homeFragmentViewModel = HomeFragmentViewModel(dataRequest)
+    override fun setUp() {
+        super.setUp()
+        hiltRule.inject()
+        MockKAnnotations.init(this)
     }
 
-    @ExperimentalCoroutinesApi
     @Test
-    fun getRates() {
-        var gson = Gson()
-        val currencyData=gson.fromJson(Constant.CurrencyStringData, CurrencyResponse::class.java)
-        mutatableCurrencyResponse.postValue(currencyData)
-        Mockito.`when`(dataRequest.getCurrencyRates(BuildConfig.API_KEY,"USD")).thenAnswer {
-            assertEquals(currencyData, it)
-        }
-
+    fun getPopularNews() =  runBlocking<Unit>{
+        homeFragmentViewModel = HomeFragmentViewModel(dataRequest)
+        dataRepository= DefaultRepository(dataRequest)
+        val sampleResponse = getJson("success_resp_list.json")
+        var jsonObj = Gson().fromJson(sampleResponse, MostPopularViewResponse::class.java)
+        mutatableResponse=dataRepository.getPopularNews(BuildConfig.API_KEY)
+        assert(mutatableResponse.value?.status  == Constant.OK)
+        Assert.assertEquals(jsonObj, mutatableResponse.value)
     }
+
 }

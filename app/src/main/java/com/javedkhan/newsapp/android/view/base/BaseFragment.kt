@@ -19,7 +19,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.javedkhan.newsapp.android.R
-import com.javedkhan.newsapp.android.utils.AppUtils
+import com.javedkhan.newsapp.android.utils.Constant
 
 
 abstract class BaseFragment<T : ViewDataBinding, V : BaseViewModel<*>>: Fragment() {
@@ -156,7 +156,7 @@ abstract class BaseFragment<T : ViewDataBinding, V : BaseViewModel<*>>: Fragment
             progressDialog.setCancelable(false);
             progressDialog.show();
         }*/
-        progressDialog = AppUtils.ShowLoader(activity)
+        progressDialog = Constant.ShowLoader(activity)
     }
 
     open fun hideProgressDialog() {

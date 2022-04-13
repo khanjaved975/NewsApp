@@ -40,6 +40,10 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>(),
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         homeFragmentBinding = this.viewDataBinding!!
+        setUI()
+    }
+
+    private fun setUI(){
         homeFragmentBinding.toolbarTitle.text = resources.getString(R.string.nytimes)
         homeFragmentBinding.btnRefresh.setOnClickListener {
             getPopularArticle()
@@ -48,7 +52,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>(),
 
     override fun onResume() {
         super.onResume()
-        getPopularArticle()
     }
 
     private fun getPopularArticle() {
@@ -98,7 +101,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>(),
     }
 
     private fun onClickItem(result: Result) {
-       // Toast.makeText(context, result.title, Toast.LENGTH_SHORT).show()
         ArticleDetailPageNavigation(result.title,result.url)
     }
 

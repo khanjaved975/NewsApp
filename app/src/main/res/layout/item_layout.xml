@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     style="@style/RippleStyleBlack"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -89,8 +88,7 @@
                     android:layout_marginBottom="@dimen/spacing_middle"
                     android:drawableLeft="@drawable/ic_action_calender"
                     android:padding="@dimen/spacing_small"
-                    android:textAlignment="center"
-                     />
+                    android:textAlignment="center" />
 
 
             </RelativeLayout>
@@ -110,7 +108,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/grey_300"></View>
+            android:background="@color/grey_300" />
 
 
     </LinearLayout>

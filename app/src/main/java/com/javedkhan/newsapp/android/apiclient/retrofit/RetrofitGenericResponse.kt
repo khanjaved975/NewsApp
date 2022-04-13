@@ -46,7 +46,6 @@ object RetrofitGenericResponse {
                     }
                 }
                 override fun onFailure(call: Call<T>, t: Throwable) {
-                    Log.d(TAG, "onFailure: $t")
                     retrofitResponseCallback.failure(t.toString())
                 }
             })

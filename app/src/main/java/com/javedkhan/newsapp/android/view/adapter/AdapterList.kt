@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.javedkhan.newsapp.android.R
 import com.javedkhan.newsapp.android.models.Result
+import com.javedkhan.newsapp.android.utils.ItemAnimation
 import kotlinx.android.synthetic.main.item_layout.view.*
 
 
@@ -31,12 +32,12 @@ class AdapterList(
     }
 
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {
-
         holder.bind(items[position])
-
         holder.itemView.setOnClickListener {
             onClickItem(items[position])
         }
+        //To add itemlist animation
+       // ItemAnimation.animateBottomUp(holder.itemView,position)
     }
 
     class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -47,9 +48,7 @@ class AdapterList(
                 itemView.txt_description.text = item.adxKeywords
                 itemView.txt_date.text = item.publishedDate
                 itemView.txt_author.text = item.byline
-                /*Glide.with(imageViewAvatar.context)
-                    .load(user.avatar)
-                    .into(imageViewAvatar)*/
+
             }
         }
     }

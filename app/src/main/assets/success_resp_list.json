@@ -1,0 +1,1276 @@
+{
+  "status": "OK",
+  "copyright": "Copyright (c) 2022 The New York Times Company.  All Rights Reserved.",
+  "num_results": 20,
+  "results": [
+    {
+      "uri": "nyt://article/c1b7c039-cf01-59e5-99f4-55448d471498",
+      "url": "https://www.nytimes.com/2022/04/04/world/europe/bucha-ukraine-bodies.html",
+      "id": 100000008287402,
+      "asset_id": 100000008287402,
+      "source": "New York Times",
+      "published_date": "2022-04-04",
+      "updated": "2022-04-06 14:27:01",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "Russian Invasion of Ukraine (2022);Civilian Casualties;Ukraine;Russia;Bucha (Ukraine);Kyiv (Ukraine)",
+      "column": null,
+      "byline": "By Malachy Browne, David Botti and Haley Willis",
+      "type": "Article",
+      "title": "Satellite images show bodies lay in Bucha for weeks, despite Russian claims.",
+      "abstract": "The images rebut Russia’s claim that the killing of civilians in Bucha, near Kyiv, took place after its soldiers had left town.",
+      "des_facet": [
+        "Russian Invasion of Ukraine (2022)",
+        "Civilian Casualties"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+
+      ],
+      "geo_facet": [
+        "Ukraine",
+        "Russia",
+        "Bucha (Ukraine)",
+        "Kyiv (Ukraine)"
+      ],
+      "media": [
+
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/e672b5f1-baf7-5966-8be8-7f8f702b5b58",
+      "url": "https://www.nytimes.com/2022/04/05/world/europe/bucha-shooting-video.html",
+      "id": 100000008289452,
+      "asset_id": 100000008289452,
+      "source": "New York Times",
+      "published_date": "2022-04-05",
+      "updated": "2022-04-06 23:58:02",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "Russian Invasion of Ukraine (2022);Civilian Casualties;Bucha (Ukraine)",
+      "column": null,
+      "byline": "By Malachy Browne and Dmitriy Khavin",
+      "type": "Article",
+      "title": "Russian soldiers opened fire on a cyclist in Bucha, new video shows.",
+      "abstract": "Chilling aerial video from Ukraine adds to the evidence of Russian atrocities against civilians and undercuts their denials of wrongdoing.",
+      "des_facet": [
+        "Russian Invasion of Ukraine (2022)",
+        "Civilian Casualties"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+
+      ],
+      "geo_facet": [
+        "Bucha (Ukraine)"
+      ],
+      "media": [
+
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/ef22fa8f-fc58-5476-aeae-b759cff1f7fc",
+      "url": "https://www.nytimes.com/2022/04/05/nyregion/judge-john-michalski-dead-buffalo.html",
+      "id": 100000008290666,
+      "asset_id": 100000008290666,
+      "source": "New York Times",
+      "published_date": "2022-04-05",
+      "updated": "2022-04-07 00:16:48",
+      "section": "New York",
+      "subsection": "",
+      "nytdsection": "new york",
+      "adx_keywords": "Ethics and Official Misconduct;Suicides and Suicide Attempts;Human Trafficking;Sex Crimes;Drug Abuse and Traffic;Bribery and Kickbacks;Michalski, John L;Gerace, Peter Jr;Commission on Judicial Conduct (NYS);Amherst (NY)",
+      "column": null,
+      "byline": "By Ed Shanahan and Jesse McKinley",
+      "type": "Article",
+      "title": "New York Judge Dies by Suicide After Authorities Search His Home",
+      "abstract": "John Michalski, a respected trial court judge, had come under scrutiny amid a federal prosecution of a former client. He denied any impropriety.",
+      "des_facet": [
+        "Ethics and Official Misconduct",
+        "Suicides and Suicide Attempts",
+        "Human Trafficking",
+        "Sex Crimes",
+        "Drug Abuse and Traffic",
+        "Bribery and Kickbacks"
+      ],
+      "org_facet": [
+        "Commission on Judicial Conduct (NYS)"
+      ],
+      "per_facet": [
+        "Michalski, John L",
+        "Gerace, Peter Jr"
+      ],
+      "geo_facet": [
+        "Amherst (NY)"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Justice John Michalski of the State Supreme Court in Erie County was found dead at his home on Tuesday.",
+          "copyright": "Buffalo News",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/05/05/nyregion/05ny-judgedeath-new/05ny-judgedeath-new-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/05/05/nyregion/05ny-judgedeath-new/05ny-judgedeath-new-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/05/05/nyregion/05ny-judgedeath-new/05ny-judgedeath-new-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/23e9e9e1-884f-5295-b954-fe81f2ca532c",
+      "url": "https://www.nytimes.com/2022/04/08/arts/television/marjorie-taylor-greene-jimmy-kimmel.html",
+      "id": 100000008293266,
+      "asset_id": 100000008293266,
+      "source": "New York Times",
+      "published_date": "2022-04-08",
+      "updated": "2022-04-09 11:59:57",
+      "section": "Arts",
+      "subsection": "Television",
+      "nytdsection": "arts",
+      "adx_keywords": "Television;Kimmel, Jimmy;Colbert, Stephen;Fallon, Jimmy",
+      "column": null,
+      "byline": "By Trish Bendix",
+      "type": "Article",
+      "title": "Marjorie Taylor Greene Calls the Police on Jimmy Kimmel",
+      "abstract": "Kimmel said of Greene’s angry tweets about a joke he made earlier this week: “She’s a snowflake and a sociopath at the same time — a ‘snowciopath.’”",
+      "des_facet": [
+        "Television"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+        "Kimmel, Jimmy",
+        "Colbert, Stephen",
+        "Fallon, Jimmy"
+      ],
+      "geo_facet": [
+
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "“I feel like maybe other Republicans like having her around to make the rest of them seem normal,” Jimmy Kimmel said of Marjorie Taylor Greene.",
+          "copyright": "ABC",
+          "approved_for_syndication": 0,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/08/arts/08latenight/08latenight-thumbStandard-v2.png",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/08/arts/08latenight/08latenight-mediumThreeByTwo210-v2.png",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/08/arts/08latenight/08latenight-mediumThreeByTwo440-v2.png",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/943d26a9-f359-5168-865b-d3acc51a65c3",
+      "url": "https://www.nytimes.com/2022/04/03/arts/music/grammys-winners.html",
+      "id": 100000008090218,
+      "asset_id": 100000008090218,
+      "source": "New York Times",
+      "published_date": "2022-04-03",
+      "updated": "2022-04-07 11:13:29",
+      "section": "Arts",
+      "subsection": "Music",
+      "nytdsection": "arts",
+      "adx_keywords": "Grammy Awards;Gospel Music;Folk Music;Classical Music;Pop and Rock Music;Blues Music;Jazz",
+      "column": null,
+      "byline": "By Shivani Gonzalez",
+      "type": "Article",
+      "title": "Grammys 2022 Winners: The Complete List",
+      "abstract": "Jon Batiste won the most awards, with five. Silk Sonic followed with four trophies at the 64th annual Grammy Awards.",
+      "des_facet": [
+        "Grammy Awards",
+        "Gospel Music",
+        "Folk Music",
+        "Classical Music",
+        "Pop and Rock Music",
+        "Blues Music",
+        "Jazz"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+
+      ],
+      "geo_facet": [
+
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Jon Batiste won five Grammys, including album of the year for “We Are.”",
+          "copyright": "Matt Winkelmeyer/Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/03/arts/03grammys-list-batiste2/03grammys-list-batiste2-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/03/arts/03grammys-list-batiste2/merlin_204976251_65a627d5-2057-49b9-ac63-f8cc9cfaad81-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/03/arts/03grammys-list-batiste2/merlin_204976251_65a627d5-2057-49b9-ac63-f8cc9cfaad81-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/86cab801-18ad-56ce-b874-4214f28ce209",
+      "url": "https://www.nytimes.com/2022/04/06/us/ucla-adjunct-professor-salary.html",
+      "id": 100000008284175,
+      "asset_id": 100000008284175,
+      "source": "New York Times",
+      "published_date": "2022-04-06",
+      "updated": "2022-04-08 09:51:09",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Colleges and Universities;Wages and Salaries;Graduate Schools and Students;Hiring and Promotion;Tenure;Labor and Jobs;University of California, Los Angeles",
+      "column": null,
+      "byline": "By Anemona Hartocollis",
+      "type": "Article",
+      "title": "Help Wanted: Adjunct Professor, Must Have Doctorate. Salary: $0.",
+      "abstract": "After protests, U.C.L.A. took down a job posting that offered no pay. But it turns out colleges often expect Ph.D.s to work for free.",
+      "des_facet": [
+        "Colleges and Universities",
+        "Wages and Salaries",
+        "Graduate Schools and Students",
+        "Hiring and Promotion",
+        "Tenure",
+        "Labor and Jobs"
+      ],
+      "org_facet": [
+        "University of California, Los Angeles"
+      ],
+      "per_facet": [
+
+      ],
+      "geo_facet": [
+
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Liza Loza, a graduate student at Washington University in St. Louis, taught a discussion section for which she was not paid.",
+          "copyright": "Neeta Satam for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/08/us/06adjunct01/06adjunct01-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/08/us/06adjunct01/06adjunct01-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/08/us/06adjunct01/06adjunct01-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/9b6bbb89-590a-58ba-8f46-feb4b8b74405",
+      "url": "https://www.nytimes.com/2022/04/09/world/europe/putin-russia-war-ukraine.html",
+      "id": 100000008294949,
+      "asset_id": 100000008294949,
+      "source": "New York Times",
+      "published_date": "2022-04-09",
+      "updated": "2022-04-11 11:33:06",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "Russian Invasion of Ukraine (2022);Politics and Government;Political Prisoners;Polls and Public Opinion;Propaganda;Demonstrations, Protests and Riots;Putin, Vladimir V;Russia;Moscow (Russia);Ukraine",
+      "column": null,
+      "byline": "By Anton Troianovski",
+      "type": "Article",
+      "title": "Spurred by Putin, Russians Turn on One Another Over the War",
+      "abstract": "Citizens are denouncing one another, illustrating how the war is feeding paranoia and polarization in Russian society.",
+      "des_facet": [
+        "Russian Invasion of Ukraine (2022)",
+        "Politics and Government",
+        "Political Prisoners",
+        "Polls and Public Opinion",
+        "Propaganda",
+        "Demonstrations, Protests and Riots"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+        "Putin, Vladimir V"
+      ],
+      "geo_facet": [
+        "Russia",
+        "Moscow (Russia)",
+        "Ukraine"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A screen last month in St. Petersburg, Russia, showing a “Z” symbol in the colors of the St. George ribbons.",
+          "copyright": "Olga Maltseva/Agence France-Presse — Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/09/world/09RUSSIA-BETRAYAL-1/09RUSSIA-BETRAYAL-1-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/09/world/09RUSSIA-BETRAYAL-1/09RUSSIA-BETRAYAL-1-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/09/world/09RUSSIA-BETRAYAL-1/09RUSSIA-BETRAYAL-1-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/7b79dcdd-1fe8-5143-b5ac-810af361be9e",
+      "url": "https://www.nytimes.com/2022/04/10/us/jared-kushner-saudi-investment-fund.html",
+      "id": 100000008293950,
+      "asset_id": 100000008293950,
+      "source": "New York Times",
+      "published_date": "2022-04-10",
+      "updated": "2022-04-11 09:17:42",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Conflicts of Interest;Prices (Fares, Fees and Rates);Foreign Investments;Politics and Government;United States Politics and Government;United States International Relations;Kushner, Jared;Mohammed bin Salman (1985- );Mnuchin, Steven T;Trump, Donald J;Public Investment Fund (Saudi Arabia);Affinity Partners;Saudi Arabia",
+      "column": null,
+      "byline": "By David D. Kirkpatrick and Kate Kelly",
+      "type": "Article",
+      "title": "Before Giving Billions to Jared Kushner, Saudi Investment Fund Had Big Doubts",
+      "abstract": "Before committing $2 billion to Mr. Kushner’s fledgling firm, officials at a fund led by the Saudi crown prince questioned taking such a big risk.",
+      "des_facet": [
+        "Conflicts of Interest",
+        "Prices (Fares, Fees and Rates)",
+        "Foreign Investments",
+        "Politics and Government",
+        "United States Politics and Government",
+        "United States International Relations"
+      ],
+      "org_facet": [
+        "Public Investment Fund (Saudi Arabia)",
+        "Affinity Partners"
+      ],
+      "per_facet": [
+        "Kushner, Jared",
+        "Mohammed bin Salman (1985- )",
+        "Mnuchin, Steven T",
+        "Trump, Donald J"
+      ],
+      "geo_facet": [
+        "Saudi Arabia"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Crown Prince Mohammed bin Salman of Saudi Arabia with Jared Kushner, a close ally during the Trump administration, and Ivanka Trump.",
+          "copyright": "Jonathan Ernst/Reuters",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/10/multimedia/00saudi-kushner-1/00saudi-kushner-1-thumbStandard-v2.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/10/multimedia/00saudi-kushner-1/00saudi-kushner-1-mediumThreeByTwo210-v3.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/10/multimedia/00saudi-kushner-1/00saudi-kushner-1-mediumThreeByTwo440-v3.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/07078db9-5adf-5a07-b63f-056119d49c38",
+      "url": "https://www.nytimes.com/2022/04/11/magazine/trump-putin-ukraine-fiona-hill.html",
+      "id": 100000008294434,
+      "asset_id": 100000008294434,
+      "source": "New York Times",
+      "published_date": "2022-04-11",
+      "updated": "2022-04-12 10:59:49",
+      "section": "Magazine",
+      "subsection": "",
+      "nytdsection": "magazine",
+      "adx_keywords": "Trump-Ukraine Whistle-Blower Complaint and Impeachment Inquiry;Presidents and Presidency (US);United States International Relations;Russian Interference in 2016 US Elections and Ties to Trump Associates;Storming of the US Capitol (Jan, 2021);Rumors and Misinformation;War and Armed Conflicts;Russian Invasion of Ukraine (2022);Bolton, John R;Hill, Fiona (1965- );Putin, Vladimir V;Zelensky, Volodymyr;Vindman, Alexander S;National Security Council",
+      "column": null,
+      "byline": "By Robert Draper",
+      "type": "Article",
+      "title": "‘This Was Trump Pulling a Putin’",
+      "abstract": "Amid the current crisis, Fiona Hill and other former advisers are connecting President Trump’s pressure campaign on Ukraine to Jan. 6. And they’re ready to talk.",
+      "des_facet": [
+        "Trump-Ukraine Whistle-Blower Complaint and Impeachment Inquiry",
+        "Presidents and Presidency (US)",
+        "United States International Relations",
+        "Russian Interference in 2016 US Elections and Ties to Trump Associates",
+        "Storming of the US Capitol (Jan, 2021)",
+        "Rumors and Misinformation",
+        "War and Armed Conflicts",
+        "Russian Invasion of Ukraine (2022)"
+      ],
+      "org_facet": [
+        "National Security Council"
+      ],
+      "per_facet": [
+        "Bolton, John R",
+        "Hill, Fiona (1965- )",
+        "Putin, Vladimir V",
+        "Zelensky, Volodymyr",
+        "Vindman, Alexander S"
+      ],
+      "geo_facet": [
+
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Fiona Hill",
+          "copyright": "Trent Davis Bailey for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/17/magazine/17mag-Hill/17mag-Hill-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/17/magazine/17mag-Hill/17mag-Hill-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/17/magazine/17mag-Hill/17mag-Hill-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/574c1dfe-73bb-5e65-b514-7c3421ed0802",
+      "url": "https://www.nytimes.com/2022/04/06/nyregion/sarah-lawrence-cult-lawrence-ray-trial.html",
+      "id": 100000008287472,
+      "asset_id": 100000008287472,
+      "source": "New York Times",
+      "published_date": "2022-04-06",
+      "updated": "2022-04-07 12:24:29",
+      "section": "New York",
+      "subsection": "",
+      "nytdsection": "new york",
+      "adx_keywords": "Religious Cults;Extortion and Blackmail;Prostitution;Human Trafficking;Sex Crimes;Colleges and Universities;Decisions and Verdicts;Ray, Lawrence V;Sarah Lawrence College",
+      "column": null,
+      "byline": "By Colin Moynihan",
+      "type": "Article",
+      "title": "Sarah Lawrence Cult Leader Convicted of Trafficking and Extortion",
+      "abstract": "In 2010, Lawrence V. Ray moved into his daughter’s dormitory, gathered a circle of young followers around himself and began years of domination.",
+      "des_facet": [
+        "Religious Cults",
+        "Extortion and Blackmail",
+        "Prostitution",
+        "Human Trafficking",
+        "Sex Crimes",
+        "Colleges and Universities",
+        "Decisions and Verdicts"
+      ],
+      "org_facet": [
+        "Sarah Lawrence College"
+      ],
+      "per_facet": [
+        "Ray, Lawrence V"
+      ],
+      "geo_facet": [
+
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Lawrence Ray was found guilty of extortion, sex trafficking and racketeering conspiracy.",
+          "copyright": "U.S. Attorney's office, via Associated Press",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/05/nyregion/00culttrial-hfo1/merlin_168781986_a617f907-77bd-4105-b423-0e3a3eca31f9-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/05/nyregion/00culttrial-hfo1/merlin_168781986_a617f907-77bd-4105-b423-0e3a3eca31f9-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/05/nyregion/00culttrial-hfo1/merlin_168781986_a617f907-77bd-4105-b423-0e3a3eca31f9-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/8428defe-c56e-5177-8798-ea2fbc3ef715",
+      "url": "https://www.nytimes.com/2022/04/06/us/politics/us-russia-malware-cyberattacks.html",
+      "id": 100000008282002,
+      "asset_id": 100000008282002,
+      "source": "New York Times",
+      "published_date": "2022-04-06",
+      "updated": "2022-04-07 10:45:47",
+      "section": "U.S.",
+      "subsection": "Politics",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Russian Invasion of Ukraine (2022);Cyberwarfare and Defense;United States International Relations;Espionage and Intelligence Services;Biden, Joseph R Jr;Justice Department;Federal Bureau of Investigation;GRU (Russia);Russia;Ukraine",
+      "column": null,
+      "byline": "By Kate Conger and David E. Sanger",
+      "type": "Article",
+      "title": "U.S. Says It Secretly Removed Malware Worldwide, Pre-empting Russian Cyberattacks",
+      "abstract": "The operation is the latest effort by the Biden administration to thwart actions by Russia by making them public before Moscow can strike.",
+      "des_facet": [
+        "Russian Invasion of Ukraine (2022)",
+        "Cyberwarfare and Defense",
+        "United States International Relations",
+        "Espionage and Intelligence Services"
+      ],
+      "org_facet": [
+        "Justice Department",
+        "Federal Bureau of Investigation",
+        "GRU (Russia)"
+      ],
+      "per_facet": [
+        "Biden, Joseph R Jr"
+      ],
+      "geo_facet": [
+        "Russia",
+        "Ukraine"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Some American officials fear that President Vladimir V. Putin of Russia may be biding his time in launching a major cyberoperation that could strike a blow at the American economy.",
+          "copyright": "Mikhail Klimentyev/Sputnik",
+          "approved_for_syndication": 0,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/us/politics/06dc-russia-hacks-1/merlin_204742779_ca6a0b7b-3630-426c-9ee7-77628e11521b-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/us/politics/06dc-russia-hacks-1/merlin_204742779_ca6a0b7b-3630-426c-9ee7-77628e11521b-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/us/politics/06dc-russia-hacks-1/merlin_204742779_ca6a0b7b-3630-426c-9ee7-77628e11521b-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/4c0163db-962d-50b7-8c33-68bd3efa12d2",
+      "url": "https://www.nytimes.com/2022/04/04/business/china-eastern-boeing-crash.html",
+      "id": 100000008277607,
+      "asset_id": 100000008277607,
+      "source": "New York Times",
+      "published_date": "2022-04-04",
+      "updated": "2022-04-06 05:37:36",
+      "section": "Business",
+      "subsection": "",
+      "nytdsection": "business",
+      "adx_keywords": "Aviation Accidents, Safety and Disasters;Airlines and Airplanes;Pilots;Politics and Government;China Eastern Airlines;China;Guangxi (China)",
+      "column": null,
+      "byline": "By Keith Bradsher",
+      "type": "Article",
+      "title": "A Flight Over China in Clear Skies, Followed by a Nosedive",
+      "abstract": "Investigators face a formidable challenge in figuring out why China Eastern Flight 5735 crashed on March 21.",
+      "des_facet": [
+        "Aviation Accidents, Safety and Disasters",
+        "Airlines and Airplanes",
+        "Pilots",
+        "Politics and Government"
+      ],
+      "org_facet": [
+        "China Eastern Airlines"
+      ],
+      "per_facet": [
+
+      ],
+      "geo_facet": [
+        "China",
+        "Guangxi (China)"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Recovery workers paused for a moment of silence on March 27 for victims of the China Eastern Flight 5735 crash in the Guangxi region of southern China.",
+          "copyright": "China News Service, via Agence France-Presse \u0026mdash; Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/05/world/00CHINA-Crash1/merlin_204636597_6226e5ae-b51d-4835-9f37-1662666eb5c6-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/05/world/00CHINA-Crash1/merlin_204636597_6226e5ae-b51d-4835-9f37-1662666eb5c6-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/05/world/00CHINA-Crash1/merlin_204636597_6226e5ae-b51d-4835-9f37-1662666eb5c6-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/b3771ccd-aa28-56df-af1f-ffe2bdd16cdf",
+      "url": "https://www.nytimes.com/2022/03/30/well/live/ba2-omicron-covid.html",
+      "id": 100000008279591,
+      "asset_id": 100000008279591,
+      "source": "New York Times",
+      "published_date": "2022-03-30",
+      "updated": "2022-04-08 14:26:59",
+      "section": "Well",
+      "subsection": "Live",
+      "nytdsection": "well",
+      "adx_keywords": "Coronavirus Omicron Variant;Coronavirus (2019-nCoV);Coronavirus Risks and Safety Concerns;Content Type: Service;Disease Rates;Masks;Pulse Oximetry;Vaccination and Immunization;Drugs (Pharmaceuticals);Tests (Medical);United States",
+      "column": null,
+      "byline": "By Tara Parker-Pope and Knvul Sheikh",
+      "type": "Article",
+      "title": "A New Wave of Covid-19 Is Coming. Here’s How to Prepare.",
+      "abstract": "Taking these seven steps now can lower your risk and minimize the disruption to your family’s life.",
+      "des_facet": [
+        "Coronavirus Omicron Variant",
+        "Coronavirus (2019-nCoV)",
+        "Coronavirus Risks and Safety Concerns",
+        "Content Type: Service",
+        "Disease Rates",
+        "Masks",
+        "Pulse Oximetry",
+        "Vaccination and Immunization",
+        "Drugs (Pharmaceuticals)",
+        "Tests (Medical)"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+
+      ],
+      "geo_facet": [
+        "United States"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "John Macdougall/Agence France-Presse \u0026mdash; Getty Images",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/05/well/30well-surge-plan1/30well-surge-plan1-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/05/well/30well-surge-plan1/30well-surge-plan1-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/05/well/30well-surge-plan1/30well-surge-plan1-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/4821bb5b-a507-5191-9f5b-c6e58c39d1b5",
+      "url": "https://www.nytimes.com/2022/04/08/world/europe/ukraine-chernobyl.html",
+      "id": 100000008294715,
+      "asset_id": 100000008294715,
+      "source": "New York Times",
+      "published_date": "2022-04-08",
+      "updated": "2022-04-09 10:43:01",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "Nuclear Energy;Radiation;Defense and Military Forces;Russian Invasion of Ukraine (2022);Chernobyl (Ukraine);Russia;Ukraine;Kyiv (Ukraine);Bucha (Ukraine)",
+      "column": null,
+      "byline": "By Andrew E. Kramer and Ivor Prickett",
+      "type": "Article",
+      "title": "Russian Blunders in Chernobyl: ‘They Came and Did Whatever They Wanted’",
+      "abstract": "Tank treads ripped up the toxic soil, bulldozers carved trenches and bunkers, and soldiers spent a month camped in — and dug into — a radioactive forest.",
+      "des_facet": [
+        "Nuclear Energy",
+        "Radiation",
+        "Defense and Military Forces",
+        "Russian Invasion of Ukraine (2022)"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+
+      ],
+      "geo_facet": [
+        "Chernobyl (Ukraine)",
+        "Russia",
+        "Ukraine",
+        "Kyiv (Ukraine)",
+        "Bucha (Ukraine)"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A crushed car and other detritus littered a main intersection in the abandoned town of Chernobyl.",
+          "copyright": "Ivor Prickett for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/08/world/08ukraine-chernobyl-promo/08ukraine-chernobyl02-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/08/world/08ukraine-chernobyl-promo/merlin_205180818_c2eedfaf-32ed-45c7-b720-02797d3eaa81-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/08/world/08ukraine-chernobyl-promo/merlin_205180818_c2eedfaf-32ed-45c7-b720-02797d3eaa81-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/675cf71d-1834-5347-958a-fae9462a6615",
+      "url": "https://www.nytimes.com/2022/04/06/us/christian-right-wing-politics.html",
+      "id": 100000008210465,
+      "asset_id": 100000008210465,
+      "source": "New York Times",
+      "published_date": "2022-04-06",
+      "updated": "2022-04-11 17:09:32",
+      "section": "U.S.",
+      "subsection": "",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Conservatism (US Politics);Right-Wing Extremism and Alt-Right;Christians and Christianity;Evangelical Movement;Places of Worship;Presidential Election of 2020;United States Politics and Government;Coronavirus (2019-nCoV);Vaccination and Immunization;Demonstrations, Protests and Riots;Conspiracy Theories;Religion-State Relations;audio-neutral-informative;Trump, Donald J",
+      "column": null,
+      "byline": "By Elizabeth Dias and Ruth Graham",
+      "type": "Article",
+      "title": "The Growing Religious Fervor in the American Right: ‘This Is a Jesus Movement’",
+      "abstract": "Rituals of Christian worship have become embedded in conservative rallies, as praise music and prayer blend with political anger over vaccines and the 2020 election.",
+      "des_facet": [
+        "Conservatism (US Politics)",
+        "Right-Wing Extremism and Alt-Right",
+        "Christians and Christianity",
+        "Evangelical Movement",
+        "Places of Worship",
+        "Presidential Election of 2020",
+        "United States Politics and Government",
+        "Coronavirus (2019-nCoV)",
+        "Vaccination and Immunization",
+        "Demonstrations, Protests and Riots",
+        "Conspiracy Theories",
+        "Religion-State Relations",
+        "audio-neutral-informative"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+        "Trump, Donald J"
+      ],
+      "geo_facet": [
+
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "A worship service led by Sean Feucht in Pasadena, Calif. Pandemic restrictions that temporarily closed churches accelerated the political activism of many Christians on the right.",
+          "copyright": "Jenna Schoenefeld for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/07/us/00worship18/00worship18-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/07/us/00worship18/00worship18-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/07/us/00worship18/00worship18-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/9189b34f-779e-552f-ac2d-5a15393e5ae7",
+      "url": "https://www.nytimes.com/2022/04/09/world/europe/putin-ukraine-russia.html",
+      "id": 100000008269710,
+      "asset_id": 100000008269710,
+      "source": "New York Times",
+      "published_date": "2022-04-09",
+      "updated": "2022-04-11 02:20:10",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "Russian Invasion of Ukraine (2022);Politics and Government;Economic Conditions and Trends;Polls and Public Opinion;Freedom of Speech and Expression;Freedom of the Press;Human Rights and Human Rights Violations;Putin, Vladimir V;Moscow (Russia);Russia;Ukraine",
+      "column": null,
+      "byline": "By Sabrina Tavernise",
+      "type": "Article",
+      "title": "Putin’s War in Ukraine Shatters an Illusion in Russia",
+      "abstract": "Russians long lived with an understanding: Stay away from politics, and live your life as you choose. The war in Ukraine wrecked that idea.",
+      "des_facet": [
+        "Russian Invasion of Ukraine (2022)",
+        "Politics and Government",
+        "Economic Conditions and Trends",
+        "Polls and Public Opinion",
+        "Freedom of Speech and Expression",
+        "Freedom of the Press",
+        "Human Rights and Human Rights Violations"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+        "Putin, Vladimir V"
+      ],
+      "geo_facet": [
+        "Moscow (Russia)",
+        "Russia",
+        "Ukraine"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "President Vladimir V. Putin’s image was projected onto the side of a building during a speech last year in Moscow.",
+          "copyright": "Sergey Ponomarev for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/09/world/09lostrussia-1/09lostrussia-1-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/09/world/09lostrussia-1/09lostrussia-1-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/09/world/09lostrussia-1/09lostrussia-1-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/ea56700f-f4e9-583a-a7a3-6402f8784a4c",
+      "url": "https://www.nytimes.com/2022/04/10/us/politics/jan-6-trump-criminal-referral.html",
+      "id": 100000008296049,
+      "asset_id": 100000008296049,
+      "source": "New York Times",
+      "published_date": "2022-04-10",
+      "updated": "2022-04-10 23:46:22",
+      "section": "U.S.",
+      "subsection": "Politics",
+      "nytdsection": "u.s.",
+      "adx_keywords": "Storming of the US Capitol (Jan, 2021);United States Politics and Government;Presidential Election of 2020;Project: Democracy;Trump, Donald J;Carter, David O;Eastman, John C;Garland, Merrick B;Lofgren, Zoe;Justice Department;House of Representatives",
+      "column": null,
+      "byline": "By Michael S. Schmidt and Luke Broadwater",
+      "type": "Article",
+      "title": "Jan. 6 Panel Has Evidence for Criminal Referral of Trump, but Splits on Sending",
+      "abstract": "Despite concluding that it has enough evidence, the committee is concerned that making a referral to the Justice Department would backfire by politicizing the investigation into the Capitol riot.",
+      "des_facet": [
+        "Storming of the US Capitol (Jan, 2021)",
+        "United States Politics and Government",
+        "Presidential Election of 2020",
+        "Project: Democracy"
+      ],
+      "org_facet": [
+        "Justice Department",
+        "House of Representatives"
+      ],
+      "per_facet": [
+        "Trump, Donald J",
+        "Carter, David O",
+        "Eastman, John C",
+        "Garland, Merrick B",
+        "Lofgren, Zoe"
+      ],
+      "geo_facet": [
+
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The question of whether to send a criminal referral to the Justice Department has exposed differences among members of the House panel investigating the Capitol attack.",
+          "copyright": "Al Drago for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/10/us/10dc-capitol-1/merlin_196522143_f6df2c89-bb49-4e66-89cc-cf8b359c5934-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/10/us/10dc-capitol-1/merlin_196522143_f6df2c89-bb49-4e66-89cc-cf8b359c5934-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/10/us/10dc-capitol-1/merlin_196522143_f6df2c89-bb49-4e66-89cc-cf8b359c5934-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/7ee38823-5738-5297-acf7-a560b3b81cd3",
+      "url": "https://www.nytimes.com/2022/04/06/world/europe/ukraine-bucha-makeup-artist.html",
+      "id": 100000008290994,
+      "asset_id": 100000008290994,
+      "source": "New York Times",
+      "published_date": "2022-04-06",
+      "updated": "2022-04-09 11:03:40",
+      "section": "World",
+      "subsection": "Europe",
+      "nytdsection": "world",
+      "adx_keywords": "Russian Invasion of Ukraine (2022);Civilian Casualties;Bucha (Ukraine);Russia;Ukraine",
+      "column": null,
+      "byline": "By Emma Bubola",
+      "type": "Article",
+      "title": "A makeup artist recognized this Bucha victim’s picture by her manicure.",
+      "abstract": "The woman, Iryna Filkina, had worked at a heating plant. She had contacted the makeup artist for help being more beautiful and fashionable.",
+      "des_facet": [
+        "Russian Invasion of Ukraine (2022)",
+        "Civilian Casualties"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+
+      ],
+      "geo_facet": [
+        "Bucha (Ukraine)",
+        "Russia",
+        "Ukraine"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "The manicured hand of Iryna Filkina, 52, was recognized by her makeup artist teacher, Anastasiia Subacheva, in this widely circulated photograph made in Bucha, Ukraine.",
+          "copyright": "Zohra Bensemra/Reuters",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/world/06ukraine-blog-makeup-artist/merlin_204887583_6a04e96f-cc91-4d14-bdde-bfb14e4e2d48-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/world/06ukraine-blog-makeup-artist/merlin_204887583_6a04e96f-cc91-4d14-bdde-bfb14e4e2d48-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/world/06ukraine-blog-makeup-artist/merlin_204887583_6a04e96f-cc91-4d14-bdde-bfb14e4e2d48-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/52ce5850-39c7-564d-a227-262dd69cd9d0",
+      "url": "https://www.nytimes.com/2022/04/06/briefing/covid-cases-us-omicron-subvariant.html",
+      "id": 100000008291053,
+      "asset_id": 100000008291053,
+      "source": "New York Times",
+      "published_date": "2022-04-06",
+      "updated": "2022-04-06 10:36:32",
+      "section": "Briefing",
+      "subsection": "",
+      "nytdsection": "briefing",
+      "adx_keywords": "Coronavirus Omicron Variant;Tests (Medical);Disease Rates;Coronavirus (2019-nCoV);Coronavirus Return to Office;United States",
+      "column": null,
+      "byline": "By David Leonhardt",
+      "type": "Article",
+      "title": "A New Covid Mystery",
+      "abstract": "Why haven’t cases started rising again in the U.S.?",
+      "des_facet": [
+        "Coronavirus Omicron Variant",
+        "Tests (Medical)",
+        "Disease Rates",
+        "Coronavirus (2019-nCoV)",
+        "Coronavirus Return to Office"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+
+      ],
+      "geo_facet": [
+        "United States"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Commuters at Grand Central Terminal during morning rush hour in Manhattan last week.",
+          "copyright": "Hiroko Masuike/The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/multimedia/06-the-morning-promo/06-the-morning-covid-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/multimedia/06-the-morning-promo/06-the-morning-covid-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/multimedia/06-the-morning-promo/06-the-morning-covid-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    },
+    {
+      "uri": "nyt://article/d3e00cad-8d39-5c1c-b529-e3a399fd29a0",
+      "url": "https://www.nytimes.com/2022/04/05/business/student-loan-pause-pandemic.html",
+      "id": 100000008282568,
+      "asset_id": 100000008282568,
+      "source": "New York Times",
+      "published_date": "2022-04-05",
+      "updated": "2022-04-06 16:48:50",
+      "section": "Business",
+      "subsection": "",
+      "nytdsection": "business",
+      "adx_keywords": "United States Politics and Government;Student Loans;Coronavirus (2019-nCoV);American Rescue Plan (2021);Biden, Joseph R Jr",
+      "column": null,
+      "byline": "By Zolan Kanno-Youngs and Stacy Cowley",
+      "type": "Article",
+      "title": "Student Loans Are Set to Be Paused Again, Pushing Payments to September",
+      "abstract": "The White House is said to be planning to announce the seventh extension of the pandemic relief program, affecting tens of millions of borrowers.",
+      "des_facet": [
+        "United States Politics and Government",
+        "Student Loans",
+        "Coronavirus (2019-nCoV)",
+        "American Rescue Plan (2021)"
+      ],
+      "org_facet": [
+
+      ],
+      "per_facet": [
+        "Biden, Joseph R Jr"
+      ],
+      "geo_facet": [
+
+      ],
+      "media": [
+        {
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Student debt activists gathered outside the White House on Monday.",
+          "copyright": "Kenny Holston for The New York Times",
+          "approved_for_syndication": 1,
+          "media-metadata": [
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/world/05studentloan-pause-print/studentloan-pause-SWAP-thumbStandard.jpg",
+              "format": "Standard Thumbnail",
+              "height": 75,
+              "width": 75
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/world/05studentloan-pause-print/merlin_205014456_f17b5731-5224-466f-8084-fa8ab7177940-mediumThreeByTwo210.jpg",
+              "format": "mediumThreeByTwo210",
+              "height": 140,
+              "width": 210
+            },
+            {
+              "url": "https://static01.nyt.com/images/2022/04/06/world/05studentloan-pause-print/merlin_205014456_f17b5731-5224-466f-8084-fa8ab7177940-mediumThreeByTwo440.jpg",
+              "format": "mediumThreeByTwo440",
+              "height": 293,
+              "width": 440
+            }
+          ]
+        }
+      ],
+      "eta_id": 0
+    }
+  ]
+}

@@ -42,7 +42,7 @@ public class ItemAnimation {
         }
     }
 
-    private static void animateBottomUp(View view, int position) {
+    public static void animateBottomUp(View view, int position) {
         boolean not_first_item = position == -1;
         position = position + 1;
         view.setTranslationY(not_first_item ? 800 : 500);

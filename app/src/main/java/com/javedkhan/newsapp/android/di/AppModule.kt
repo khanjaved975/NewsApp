@@ -1,4 +1,4 @@
-package com.javedkhan.newsapp.android.di.hilt
+package com.javedkhan.newsapp.android.di
 
 
 import com.javedkhan.newsapp.android.repository.DefaultRepository

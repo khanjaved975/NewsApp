@@ -1,5 +1,6 @@
 package com.javedkhan.newsapp.android.view.base
 
+import android.annotation.SuppressLint
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
@@ -25,6 +26,7 @@ abstract class BaseDialog : DialogFragment() {
         }
     }
 
+    @SuppressLint("UseRequireInsteadOfGet")
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         // the content
         val root = RelativeLayout(activity)

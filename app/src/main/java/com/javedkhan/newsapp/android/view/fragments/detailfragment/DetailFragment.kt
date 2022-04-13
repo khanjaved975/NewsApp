@@ -8,18 +8,13 @@ import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.viewModels
 import com.javedkhan.newsapp.android.MyApplication
 import com.javedkhan.newsapp.android.R
-import com.javedkhan.newsapp.android.models.CurrencyHistory
 import com.javedkhan.newsapp.android.databinding.FragmentDetailBinding
 import com.javedkhan.newsapp.android.view.base.BaseFragment
 import dagger.hilt.android.AndroidEntryPoint
-import java.lang.Exception
-import java.text.SimpleDateFormat
-import java.util.*
 
 @AndroidEntryPoint
 class DetailFragment : BaseFragment<FragmentDetailBinding, DetailFragmentViewModel>(),
@@ -29,8 +24,6 @@ class DetailFragment : BaseFragment<FragmentDetailBinding, DetailFragmentViewMod
     override val bindingVariable: Int get() = com.javedkhan.newsapp.android.BR.viewModel
     override val layoutId: Int get() = R.layout.fragment_detail
     private lateinit var fragmentBinding: FragmentDetailBinding
-    lateinit var currencyHistoryData: CurrencyHistory
-    var position: Int = 0
     lateinit var title: String
     lateinit var url: String
 
