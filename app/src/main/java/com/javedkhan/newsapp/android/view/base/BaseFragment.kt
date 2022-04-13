@@ -22,7 +22,7 @@ import com.javedkhan.newsapp.android.R
 import com.javedkhan.newsapp.android.utils.Constant
 
 
-abstract class BaseFragment<T : ViewDataBinding, V : BaseViewModel<*>>: Fragment() {
+abstract class BaseFragment<T : ViewDataBinding, V : BaseViewModel<*>> : Fragment() {
 
     //val sharedPreferencesManager: SharedPreferencesManager by inject()
     var baseActivity: BaseActivity<*, *>? = null
@@ -73,7 +73,11 @@ abstract class BaseFragment<T : ViewDataBinding, V : BaseViewModel<*>>: Fragment
         setHasOptionsMenu(false)
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
 
         viewDataBinding = DataBindingUtil.inflate(inflater, layoutId, container, false)
         mRootView = viewDataBinding!!.root
@@ -150,17 +154,12 @@ abstract class BaseFragment<T : ViewDataBinding, V : BaseViewModel<*>>: Fragment
 
 
     open fun showProgressLoading(message: String?) {
-        /*if (progressDialog == null || !progressDialog.isShowing()) {
-            progressDialog = new ProgressDialog(this);
-            progressDialog.setMessage(message);
-            progressDialog.setCancelable(false);
-            progressDialog.show();
-        }*/
+
         progressDialog = Constant.ShowLoader(activity)
     }
 
     open fun hideProgressDialog() {
-        if (progressDialog != null && progressDialog!!.isShowing) {
+        if (progressDialog != null) {
             progressDialog!!.dismiss()
         }
         progressDialog = null

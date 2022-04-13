@@ -1,16 +1,19 @@
 package com.javedkhan.newsapp.android.apiclient
 
 import com.javedkhan.newsapp.android.models.MostPopularViewResponse
+import com.javedkhan.newsapp.android.utils.Resource
 import retrofit2.Call
+import retrofit2.Response
 import retrofit2.http.*
 
 @JvmSuppressWildcards
  interface ApiService {
 
     @GET("svc/mostpopular/v2/viewed/7.json")
-       fun getMostPopularArticals(
+       suspend fun getMostPopularArticles(
         @Query("api-key") access_key: String,
-    ): Call<MostPopularViewResponse>
+    ): Response<MostPopularViewResponse>
+
 
 
 }

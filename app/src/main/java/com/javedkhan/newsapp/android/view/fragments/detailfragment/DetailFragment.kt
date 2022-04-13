@@ -1,6 +1,5 @@
 package com.javedkhan.newsapp.android.view.fragments.detailfragment
 
-import android.app.Activity
 import android.os.Build
 import android.os.Bundle
 import android.view.View
@@ -25,7 +24,7 @@ class DetailFragment : BaseFragment<FragmentDetailBinding, DetailFragmentViewMod
     override val layoutId: Int get() = R.layout.fragment_detail
     private lateinit var fragmentBinding: FragmentDetailBinding
     lateinit var title: String
-    lateinit var url: String
+    private lateinit var url: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,7 +51,7 @@ class DetailFragment : BaseFragment<FragmentDetailBinding, DetailFragmentViewMod
 
     private fun pageLoad() {
         if (MyApplication.hasNetwork()) {
-            fragmentBinding.webView.webViewClient = activity?.let { MyWebViewClient(it) }!!
+            fragmentBinding.webView.webViewClient = activity?.let { MyWebViewClient() }!!
             fragmentBinding.webView.loadUrl(url)
         } else {
             showAlert(
@@ -63,14 +62,14 @@ class DetailFragment : BaseFragment<FragmentDetailBinding, DetailFragmentViewMod
         }
     }
 
-    class MyWebViewClient internal constructor(private val activity: Activity) : WebViewClient() {
+    class MyWebViewClient internal constructor() : WebViewClient() {
 
         @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
         override fun shouldOverrideUrlLoading(
             view: WebView?,
             request: WebResourceRequest?
         ): Boolean {
-            val url: String = request?.url.toString();
+            val url: String = request?.url.toString()
             view?.loadUrl(url)
             return true
         }
@@ -91,7 +90,7 @@ class DetailFragment : BaseFragment<FragmentDetailBinding, DetailFragmentViewMod
 
 
     override fun backPress() {
-        navController.popBackStack()
+        navController.navigate(R.id.action_detailfragment_to_homefragment)
     }
 
 

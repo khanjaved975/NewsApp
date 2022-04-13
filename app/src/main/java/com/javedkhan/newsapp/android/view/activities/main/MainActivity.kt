@@ -52,7 +52,7 @@ class MainActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), Spl
 
     override fun onResume() {
         super.onResume()
-        merlin.bind();
+        merlin.bind()
     }
 
     override fun onPause() {

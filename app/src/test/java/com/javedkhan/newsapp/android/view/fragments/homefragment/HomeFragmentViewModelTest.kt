@@ -8,6 +8,7 @@ import com.javedkhan.newsapp.android.base.BaseUTTest
 import com.javedkhan.newsapp.android.models.MostPopularViewResponse
 import com.javedkhan.newsapp.android.repository.DefaultRepository
 import com.javedkhan.newsapp.android.utils.Constant
+import com.javedkhan.newsapp.android.utils.Resource
 import dagger.hilt.android.testing.HiltAndroidRule
 import io.mockk.MockKAnnotations
 import kotlinx.coroutines.runBlocking
@@ -30,7 +31,7 @@ class HomeFragmentViewModelTest : BaseUTTest() {
     lateinit var homeFragmentViewModel: HomeFragmentViewModel
     lateinit var  dataRepository: DefaultRepository
 
-    private var mutatableResponse = MutableLiveData<MostPopularViewResponse?>()
+    lateinit var mutatableResponse :Resource<MostPopularViewResponse>
 
     @Before
     override fun setUp() {
@@ -45,9 +46,9 @@ class HomeFragmentViewModelTest : BaseUTTest() {
         dataRepository= DefaultRepository(dataRequest)
         val sampleResponse = getJson("success_resp_list.json")
         var jsonObj = Gson().fromJson(sampleResponse, MostPopularViewResponse::class.java)
-        mutatableResponse=dataRepository.getPopularNews(BuildConfig.API_KEY)
-        assert(mutatableResponse.value?.status  == Constant.OK)
-        Assert.assertEquals(jsonObj, mutatableResponse.value)
+        mutatableResponse=dataRepository.getArticleData(BuildConfig.API_KEY)
+        assert(mutatableResponse.data?.status  == Constant.OK)
+        Assert.assertEquals(jsonObj, mutatableResponse.data)
     }
 
 }

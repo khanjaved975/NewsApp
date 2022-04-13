@@ -31,7 +31,11 @@
         android:id="@+id/detailfragment"
         android:name="com.javedkhan.newsapp.android.view.fragments.detailfragment.DetailFragment"
         android:label="DetailFragment"
-        tools:layout="@layout/fragment_detail"/>
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailfragment_to_homefragment"
+            app:destination="@id/homefragment" />
+    </fragment>
 
 
 </navigation>

@@ -5,39 +5,23 @@ import com.javedkhan.newsapp.android.apiclient.ApiService
 import com.javedkhan.newsapp.android.apiclient.retrofit.RetrofitGenericResponse
 import com.javedkhan.newsapp.android.apiclient.retrofit.RetrofitResponseCallback
 import com.javedkhan.newsapp.android.models.MostPopularViewResponse
+import com.javedkhan.newsapp.android.utils.Resource
 import retrofit2.Response
 import java.lang.Exception
 
-class DefaultRepository(val apiService: ApiService){
-
-    fun getPopularNews(apiKey: String): MutableLiveData<MostPopularViewResponse?> {
-        val data = MutableLiveData<MostPopularViewResponse?>()
-        try {
-            RetrofitGenericResponse.callRetrofit(apiService.getMostPopularArticals(apiKey), object :
-                RetrofitResponseCallback {
-                override fun success(response: Response<*>) {
-                    if (response.body() != null) {
-                        data.value = response.body() as MostPopularViewResponse
-                    }
-                }
-
-                override fun error(error: Response<*>) {
-                    data.value = null
-                }
-
-                override fun failure(message: String) {
-                    data.value = null
-                }
-            })
-        }catch (e:Exception){
-            e.localizedMessage
+class DefaultRepository(private val apiHelper: ApiService) {
+    suspend fun getArticleData(apikey:String): Resource<MostPopularViewResponse> {
+        return try {
+            val response = apiHelper.getMostPopularArticles(apikey)
+            val result = response.body()
+            if(response.isSuccessful && result != null) {
+                Resource.Success(result)
+            } else {
+                Resource.Error(response.message())
+            }
+        } catch(e: Exception) {
+            Resource.Error(e.message ?: "An error occured")
         }
-
-
-        return data
-
     }
-
-
 }
 
