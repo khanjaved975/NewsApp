@@ -10,7 +10,6 @@ import androidx.navigation.fragment.NavHostFragment
 import com.javedkhan.newsapp.android.BR
 import com.javedkhan.newsapp.android.databinding.ActivitySplashBinding
 import com.javedkhan.newsapp.android.view.base.BaseActivity
-import com.novoda.merlin.Merlin
 import dagger.hilt.android.AndroidEntryPoint
 
 
@@ -26,7 +25,6 @@ class MainActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), Spl
     private lateinit var navHost: NavHostFragment
     private lateinit var graph: NavGraph
     private lateinit var navController: NavController
-    private lateinit var merlin: Merlin
 
     override fun decideNextActivity() {
 
@@ -46,11 +44,9 @@ class MainActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), Spl
 
     override fun onResume() {
         super.onResume()
-        merlin.bind()
     }
 
     override fun onPause() {
-        merlin.unbind()
         super.onPause()
     }
 
@@ -60,7 +56,6 @@ class MainActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), Spl
         navController = navHost.navController
         val navInflater = navController.navInflater
         graph = navInflater.inflate(R.navigation.home_nav_graph)
-        merlin = Merlin.Builder().withConnectableCallbacks().build(this)
     }
 
 

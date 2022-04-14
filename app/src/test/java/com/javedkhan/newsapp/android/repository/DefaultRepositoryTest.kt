@@ -17,7 +17,6 @@ import java.net.HttpURLConnection
 
 @RunWith(JUnit4::class)
 class DefaultRepositoryTest :BaseUTTest(){
-
     //Target
     private lateinit var mRepo: DefaultRepository
     //Inject api service created with koin

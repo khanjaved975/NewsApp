@@ -32,7 +32,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>(),
         viewModel.setNavigator(this)
     }
 
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         homeFragmentBinding = this.viewDataBinding!!
@@ -56,10 +55,12 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>(),
                         when (it) {
                             is HomeFragmentViewModel.ArticleEvent.Success -> {
                                 hideProgressDialog()
-                                it.resultText.data?.let { it1 -> setNewsList(it1.results) }
+                                homeFragmentBinding.btnRefresh.visibility=View.GONE
+                                it.resultText.data?.let { it1 -> setArticleListView(it1.results) }
                             }
                             is HomeFragmentViewModel.ArticleEvent.Failure -> {
                                 hideProgressDialog()
+                                homeFragmentBinding.btnRefresh.visibility=View.VISIBLE
                                 activity?.let { it1 -> showAlert(resources.getString(R.string.error)
                                     ,it.errorText, it1) }
                             }
@@ -88,7 +89,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>(),
         }
     }
 
-    private fun setNewsList(results: List<Result>) {
+    private fun setArticleListView(results: List<Result>) {
         val adapter =
             context?.let { it1 ->
                 AdapterList(
@@ -100,14 +101,13 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeFragmentViewModel>(),
         homeFragmentBinding.rvArtical.adapter = adapter
     }
 
-
     private fun onClickItem(result: Result) {
-        ArticleDetailPageNavigation(result.title, result.url)
+        articleDetailPageNavigation(result.title, result.url)
     }
 
-    override fun ArticleDetailPageNavigation(tilte: String, url: String) {
+    override fun articleDetailPageNavigation(title: String, url: String) {
         val bundle = Bundle()
-        bundle.putString("title", tilte)
+        bundle.putString("title", title)
         bundle.putString("url", url)
         navController.navigate(R.id.action_homefragment_to_detailfragment, bundle)
     }

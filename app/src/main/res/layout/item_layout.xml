@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/RippleStyleBlack"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -9,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_medium"
-        android:background="@color/grey_3"
+        android:background="@color/white"
         android:clickable="true"
         android:focusable="true"
         android:orientation="vertical"
@@ -26,12 +27,14 @@
                 android:layout_height="65dp"
                 android:layout_centerVertical="true"
                 android:background="@drawable/shape_circle"
+                android:contentDescription="@string/to_display_image_icon"
                 android:padding="@dimen/spacing_small" />
 
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/imageViewAvatar">
+                android:layout_toEndOf="@+id/imageViewAvatar"
+                tools:ignore="RelativeOverlap">
 
                 <RelativeLayout
                     android:id="@+id/title_layout"
@@ -42,7 +45,6 @@
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:id="@+id/txt_title"
-                        style="@style/TextAppearance.AppCompat.Medium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/spacing_middle"
@@ -59,13 +61,11 @@
                         android:layout_marginStart="@dimen/spacing_middle"
                         android:ellipsize="end"
                         android:maxLines="3"
-                        android:textSize="15dp"
-                         />
+                        android:textSize="15sp" />
                 </RelativeLayout>
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/txt_author"
-                    style="@style/TextAppearance.AppCompat.Small"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/title_layout"
@@ -77,7 +77,6 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/txt_date"
-                    style="@style/TextAppearance.AppCompat.Small"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/title_layout"
@@ -86,7 +85,7 @@
                     android:layout_marginTop="@dimen/spacing_large"
                     android:layout_marginEnd="@dimen/spacing_middle"
                     android:layout_marginBottom="@dimen/spacing_middle"
-                    android:drawableLeft="@drawable/ic_action_calender"
+                    android:drawableStart="@drawable/ic_action_calender"
                     android:padding="@dimen/spacing_small"
                     android:textAlignment="center" />
 
@@ -100,7 +99,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:padding="@dimen/spacing_medium"
-                android:src="@drawable/ic_action_right_arrow" />
+                android:src="@drawable/ic_action_right_arrow"
+                android:contentDescription="@string/to_show_the_clickable_item" />
 
 
         </RelativeLayout>

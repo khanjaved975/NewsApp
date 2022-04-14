@@ -77,7 +77,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
         val view = this.currentFocus
         if (view != null) {
             val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            imm?.hideSoftInputFromWindow(view.windowToken, 0)
+            imm.hideSoftInputFromWindow(view.windowToken, 0)
         }
     }
 
@@ -113,20 +113,20 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
             val alertDialog: View =
                 inflater.inflate(R.layout.alertdialogroundedlayout, null)
             dialogBuilder.setView(alertDialog)
-            val txt_msg =
+            val textMessage =
                 alertDialog.findViewById<TextView>(R.id.txt_message)
-            val txt_title =
+            val textTitle =
                 alertDialog.findViewById<TextView>(R.id.txt_title)
-            val img_close =
+            val imageClose =
                 alertDialog.findViewById<ImageView>(R.id.img_close)
-            val btn_1 =
+            val buttonPositive =
                 alertDialog.findViewById<Button>(R.id.txt_positive)
             dialogBuilder.setCancelable(false)
-            txt_msg.text = msg
-            txt_title.text = title
+            textMessage.text = msg
+            textTitle.text = title
             val dialog = dialogBuilder.create()
-            btn_1.setOnClickListener { v: View? -> dialog.dismiss() }
-            img_close.setOnClickListener { v: View? -> dialog.dismiss() }
+            buttonPositive.setOnClickListener { v: View? -> dialog.dismiss() }
+            imageClose.setOnClickListener { v: View? -> dialog.dismiss() }
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
             val wmlp = dialog.window?.attributes
             wmlp?.gravity ?:  Gravity.CENTER
@@ -147,7 +147,7 @@ abstract class BaseActivity<T : ViewDataBinding, V : BaseViewModel<*>> : AppComp
             progressDialog.setCancelable(false);
             progressDialog.show();
         }*/
-        progressDialog = Constant.ShowLoader(this@BaseActivity)
+        progressDialog = Constant.progressDialog(this@BaseActivity)
 
     }
 

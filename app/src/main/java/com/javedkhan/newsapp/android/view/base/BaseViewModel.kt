@@ -7,13 +7,9 @@ import java.lang.ref.WeakReference
 
 abstract class BaseViewModel<N> : ViewModel() {
 
-    val isLoading = ObservableBoolean()
+    private val isLoading = ObservableBoolean()
 
     private var mNavigator: WeakReference<N>? = null
-
-    override fun onCleared() {
-        super.onCleared()
-    }
 
     fun setIsLoading(isLoading: Boolean) {
         this.isLoading.set(isLoading)

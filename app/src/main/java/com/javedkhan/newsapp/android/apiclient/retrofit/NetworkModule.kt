@@ -16,8 +16,10 @@ val sLogLevel =
         if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY else HttpLoggingInterceptor.Level.NONE
 
 
-fun getLogInterceptor() = HttpLoggingInterceptor().apply { level = sLogLevel }
-        .setLevel(HttpLoggingInterceptor.Level.BODY)
+fun getLogInterceptor(): HttpLoggingInterceptor {
+    val apply = HttpLoggingInterceptor().apply { level = sLogLevel }
+    return apply.apply { apply.level = HttpLoggingInterceptor.Level.BODY }
+}
 
 fun createNetworkClient() =
         retrofitClient(okHttpClient())

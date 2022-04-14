@@ -13,13 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.javedkhan.newsapp.android.widgets.CustomEditText
+        <TextView
             android:id="@+id/txt_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_middle"
             android:layout_marginTop="@dimen/spacing_middle"
-            android:text="title"
+            android:text="@string/title"
             android:textColor="@color/black"
             android:textSize="@dimen/spacing_large"
             android:textStyle="bold" />
@@ -31,14 +31,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_large"
-            android:layout_marginEnd="@dimen/spacing_middle"
-            android:layout_marginRight="@dimen/spacing_middle">
+            android:layout_marginEnd="@dimen/spacing_middle">
 
-            <com.javedkhan.newsapp.android.widgets.CustomTextView
+            <TextView
                 android:id="@+id/txt_message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/txt_title"
                 android:layout_marginTop="16dp"
                 android:padding="8dp"
                 android:textColor="@color/black"
@@ -50,9 +48,10 @@
             android:id="@+id/img_close"
             android:layout_width="38dp"
             android:layout_height="38dp"
+            android:contentDescription="@string/to_close_dialog"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="@dimen/spacing_middle"
-            android:layout_marginRight="@dimen/spacing_middle"
+            android:layout_marginEnd="@dimen/spacing_middle"
             android:src="@drawable/close"
             app:tint="@color/colorAccent" />
 
@@ -64,7 +63,7 @@
             android:layout_below="@+id/scroll"
             android:layout_centerHorizontal="true"
             android:layout_margin="@dimen/spacing_middle"
-            android:text="Ok"
+            android:text="@string/ok"
             android:textColor="@color/colorAccent" />
 
 

@@ -34,8 +34,6 @@ class AdapterList(
         holder.itemView.setOnClickListener {
             onClickItem(items[position])
         }
-        //To add itemlist animation
-       // ItemAnimation.animateBottomUp(holder.itemView,position)
     }
 
     class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -46,7 +44,6 @@ class AdapterList(
                 itemView.txt_description.text = item.adxKeywords
                 itemView.txt_date.text = item.publishedDate
                 itemView.txt_author.text = item.byline
-
             }
         }
     }

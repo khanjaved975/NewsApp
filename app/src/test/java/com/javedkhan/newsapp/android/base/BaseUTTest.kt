@@ -1,6 +1,5 @@
 package com.javedkhan.newsapp.android.base
 
-import dagger.hilt.android.testing.HiltAndroidTest
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.After
