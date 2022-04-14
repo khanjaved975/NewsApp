@@ -1,16 +1,13 @@
 package com.javedkhan.newsapp.android.view.adapter
 
 import android.content.Context
-import android.text.method.TextKeyListener.clear
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.javedkhan.newsapp.android.R
 import com.javedkhan.newsapp.android.models.Result
-import com.javedkhan.newsapp.android.utils.ItemAnimation
 import kotlinx.android.synthetic.main.item_layout.view.*
-import org.apache.commons.lang3.ArrayUtils.addAll
 
 
 class AdapterList(
@@ -18,7 +15,6 @@ class AdapterList(
     private var items: List<Result>,
     val onClickItem: (Result) -> Unit
 ) : RecyclerView.Adapter<AdapterList.DataViewHolder>() {
-   // class MyViewHolder(view: View) : RecyclerView.ViewHolder(view)
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -31,10 +27,6 @@ class AdapterList(
 
     override fun getItemCount(): Int {
         return items.size
-    }
-
-    fun updateList(results: List<Result>) {
-        this.items = results;
     }
 
     override fun onBindViewHolder(holder: DataViewHolder, position: Int) {

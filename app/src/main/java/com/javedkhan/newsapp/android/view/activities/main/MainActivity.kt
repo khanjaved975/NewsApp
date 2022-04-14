@@ -1,11 +1,8 @@
 package com.javedkhan.newsapp.android.view.activities.main
 
-
-import android.content.Intent
 import com.javedkhan.newsapp.android.R
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.view.View
 import androidx.activity.viewModels
 import androidx.navigation.NavController
 import androidx.navigation.NavGraph
@@ -26,11 +23,10 @@ class MainActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), Spl
     override val layoutId: Int
     get() = R.layout.activity_splash
 
-    lateinit var navHost: NavHostFragment
-    lateinit var graph: NavGraph
-    lateinit var navController: NavController
-    lateinit var parentLayout: View
-    lateinit var merlin: Merlin
+    private lateinit var navHost: NavHostFragment
+    private lateinit var graph: NavGraph
+    private lateinit var navController: NavController
+    private lateinit var merlin: Merlin
 
     override fun decideNextActivity() {
 
@@ -40,9 +36,7 @@ class MainActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), Spl
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         viewModel.setNavigator(this)
-        //viewModel.startSeeding()
         try {
-           // parentLayout = findViewById<View>(android.R.id.content)
             setUpNavFragment()
 
         } catch (e: PackageManager.NameNotFoundException) {
@@ -60,16 +54,14 @@ class MainActivity : BaseActivity<ActivitySplashBinding, SplashViewModel>(), Spl
         super.onPause()
     }
 
-    fun setUpNavFragment() {
+    private fun setUpNavFragment() {
         navHost =
             (supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment?)!!
-        navController = navHost!!.navController
+        navController = navHost.navController
         val navInflater = navController.navInflater
         graph = navInflater.inflate(R.navigation.home_nav_graph)
         merlin = Merlin.Builder().withConnectableCallbacks().build(this)
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-    }
+
 }

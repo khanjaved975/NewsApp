@@ -1,6 +1,5 @@
 package com.javedkhan.newsapp.android.view.fragments.homefragment
 
-import androidx.lifecycle.MutableLiveData
 import com.google.gson.Gson
 import com.javedkhan.newsapp.android.BuildConfig
 import com.javedkhan.newsapp.android.apiclient.ApiService
@@ -27,9 +26,9 @@ class HomeFragmentViewModelTest : BaseUTTest() {
     var hiltRule = HiltAndroidRule(this)
 
     @Mock
-    lateinit var dataRequest: ApiService
-    lateinit var homeFragmentViewModel: HomeFragmentViewModel
-    lateinit var  dataRepository: DefaultRepository
+    private lateinit var dataRequest: ApiService
+    private lateinit var homeFragmentViewModel: HomeFragmentViewModel
+    private lateinit var  dataRepository: DefaultRepository
 
     lateinit var mutatableResponse :Resource<MostPopularViewResponse>
 

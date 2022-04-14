@@ -1,8 +1,6 @@
 package com.javedkhan.newsapp.android.apiclient
 
 import com.javedkhan.newsapp.android.models.MostPopularViewResponse
-import com.javedkhan.newsapp.android.utils.Resource
-import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.*
 

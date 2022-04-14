@@ -16,11 +16,7 @@ import javax.inject.Inject
 @HiltViewModel
 class HomeFragmentViewModel @Inject constructor(apiService: ApiService) :
     BaseViewModel<HomeNavigator>() {
-    private val mainRepository: DefaultRepository
-
-    init {
-        mainRepository = DefaultRepository(apiService)
-    }
+    private val mainRepository: DefaultRepository = DefaultRepository(apiService)
 
     sealed class ArticleEvent {
         class Success(val resultText: Resource<MostPopularViewResponse>) : ArticleEvent()

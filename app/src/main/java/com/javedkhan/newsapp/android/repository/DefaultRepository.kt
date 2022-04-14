@@ -1,12 +1,8 @@
 package com.javedkhan.newsapp.android.repository
 
-import androidx.lifecycle.MutableLiveData
 import com.javedkhan.newsapp.android.apiclient.ApiService
-import com.javedkhan.newsapp.android.apiclient.retrofit.RetrofitGenericResponse
-import com.javedkhan.newsapp.android.apiclient.retrofit.RetrofitResponseCallback
 import com.javedkhan.newsapp.android.models.MostPopularViewResponse
 import com.javedkhan.newsapp.android.utils.Resource
-import retrofit2.Response
 import java.lang.Exception
 
 class DefaultRepository(private val apiHelper: ApiService) {

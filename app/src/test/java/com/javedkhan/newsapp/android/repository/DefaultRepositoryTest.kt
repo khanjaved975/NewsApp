@@ -34,12 +34,12 @@ class DefaultRepositoryTest :BaseUTTest(){
     }
 
     @Test
-    fun testPopularNews() {
+    suspend fun testPopularNews() {
         mockNetworkResponseWithFileContent("success_resp_list.json", HttpURLConnection.HTTP_OK)
         mRepo = DefaultRepository(apiService)
-        val dataReceived = mRepo.getPopularNews(BuildConfig.API_KEY)
+        val dataReceived = mRepo.getArticleData(BuildConfig.API_KEY)
         assertNotNull(dataReceived)
-        assertEquals(dataReceived.value?.results?.size, 20)
+        assertEquals(dataReceived.data?.results?.size , 20)
     }
 
 

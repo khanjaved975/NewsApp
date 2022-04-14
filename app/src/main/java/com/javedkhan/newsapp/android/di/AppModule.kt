@@ -3,7 +3,7 @@ package com.javedkhan.newsapp.android.di
 
 import com.javedkhan.newsapp.android.repository.DefaultRepository
 import com.javedkhan.newsapp.android.apiclient.ApiService
-import com.javedkhan.newsapp.android.data.service.retrofit.createNetworkClient
+import com.javedkhan.newsapp.android.apiclient.retrofit.createNetworkClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
